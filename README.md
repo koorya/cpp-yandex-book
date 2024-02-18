@@ -7,3 +7,5 @@ conan install -pr develop.profile -of conan-build .
 cmake -S . -B cmake-build  --toolchain=conan-build/conan_toolchain.cmake -DCMAKE_BUILD_TYPE=Release 
 
 cmake --build cmake-build
+
+cmake --build cmake-build && ctest --test-dir cmake-build
