@@ -4,6 +4,6 @@
         "conan": {}
     },
     "include": [
-        "/home/kirill/study/cpp/yandex/build/CMakePresets.json"
+        "/home/kirill/study/cpp/yandex/conan-build/CMakePresets.json"
     ]
 }
