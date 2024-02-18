@@ -1,7 +1,7 @@
 
 cmake_minimum_required(VERSION 3.25)
 
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/../bin)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++20 -O3 -fsanitize=address,undefined -Wall -Wextra -Wpedantic -Werror")
 # set(CMAKE_VERBOSE_MAKEFILE ON)

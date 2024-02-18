@@ -1,3 +1,5 @@
 a.out
-build
 .venv
+cmake-build
+conan-build
+bin
