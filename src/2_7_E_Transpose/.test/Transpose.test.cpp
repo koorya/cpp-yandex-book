@@ -11,3 +11,9 @@ TEST(Transpose, one_x_one) {
 
   EXPECT_EQ(Transpose(input), input);
 }
+
+TEST(Transpose, one_x_two) {
+  auto input = std::vector<std::vector<int>>(1, std::vector<int>(2, 1));
+  auto transposed = std::vector<std::vector<int>>(2, std::vector<int>(1, 1));
+  EXPECT_EQ(Transpose(input), transposed);
+}
