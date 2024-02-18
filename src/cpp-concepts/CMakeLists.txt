@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 3.25)
 
 project(cpp-concepts)
 
+enable_testing()
+
 find_package(GTest REQUIRED)
 
 
@@ -15,3 +17,6 @@ target_link_libraries(${EXECUTABLE_TEST_RUNNER} GTest::gtest)
 target_link_libraries(${EXECUTABLE_TEST_RUNNER} GTest::gmock)
 target_link_libraries(${EXECUTABLE_TEST_RUNNER} GTest::gtest_main)
 
+
+include(GoogleTest)
+gtest_discover_tests(${EXECUTABLE_TEST_RUNNER})
