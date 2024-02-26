@@ -2,7 +2,6 @@ cmake_minimum_required(VERSION 3.25)
 
 project(cpp-concepts)
 
-enable_testing()
 
 find_package(GTest REQUIRED)
 
